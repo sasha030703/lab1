@@ -3,11 +3,18 @@
 #include <math.h>
 int main(void)
 {
+    int y;
     int mass_two[3], mass_ten[3];
     for(int i=0;i<3;i++)
     {   
         int num, res=0, count=0;
-        scanf("%d", &num);
+        y = scanf("%d", &num);
+        y;
+        if (y !=1)
+        {
+            printf("Vvedite chislo\n");
+            return 1;
+        }
         mass_two[i] = num;
         for (;num != 0;num = num / 10)
         {   
