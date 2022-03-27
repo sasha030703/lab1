@@ -3,13 +3,6 @@
 #include <locale.h>
 #include <malloc.h>
 
-void PrintNames(int N)
-{
-	for (int i = 0; i < N; i++)
-	{
-		printf("%c;\n", 'a' + i);
-	}
-}
 int main(void)
 {
 	int N, M;
